@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+ body {
+  background: #386DDC;
+  background: linear-gradient(to right, #386DDC 0%, #3C90B8 50%, #4AC5FB 100%);;
+  font-family: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Oxygen,
+               Ubuntu,
+               Cantarell,
+               "Open Sans",
+               "Helvetica Neue",
+               sans-serif;
+  font-size: 16px;
+
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 31px;
+  letter-spacing: -0.2px;
+  word-spacing: 3.2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+input {
+  margin: 2px 0 0;
+  background-color: #99EEFF;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+input[type="text"] {
+  display: inline-block;
+  height: 40px;
+  font-size: 16px;
+  width: 300px;
+  line-height: 40px;
+  padding: 8px;
+}
+
+.block {
+  background: #46C6DC;
+  background: -moz-linear-gradient(45deg, #46C6DC 0%, #60F6FF 50%, #45EEFB 100%);
+  background: -webkit-linear-gradient(45deg, #46C6DC 0%, #60F6FF 50%, #45EEFB 100%);
+  background: linear-gradient(45deg, #46C6DC 0%, #60F6FF 50%, #45EEFB 100%);
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 7px 1px rgba(0,0,0, 0.2);
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 560px) {
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .block {
+    flex-basis: 48%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .block {
+    flex-basis: 19%;
+  }
+}
+
+.block.today {
+  flex-basis: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.wi {
+  text-align: center;
+  font-size: 4rem;
+}
+.wi:before {
+  line-height: 92px;
+  vertical-align: middle;
+}
+.today .wi {
+  text-align: center;
+  font-size: 6rem;
+  margin: 0 30px 0 20px;
+}
+.today .wi:before {
+  line-height: 144px;
+}
